@@ -1,0 +1,2 @@
+build:
+	xelatex CV.tex
