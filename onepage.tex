@@ -1,0 +1,207 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SIMPLE-RESUME-CV
+%% <https://github.com/zachscrivena/simple-resume-cv>
+%% This is free and unencumbered software released into the
+%% public domain; see <http://unlicense.org> for details.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% INSTRUCTIONS FOR COMPILING THIS DOCUMENT ("CV.tex")
+%% TEX ---(XeLaTeX)---> PDF:
+%%
+%% Method 1: Use latexmk for fully automated document generation:
+%%   latexmk -xelatex "CV.tex"
+%%   (add the -pvc switch to automatically recompile on changes)
+%%
+%% Method 2: Use XeLaTeX directly:
+%%   xelatex "CV.tex"
+%%   (run multiple times to resolve cross-references if needed)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[a4paper,10pt,oneside]{article}
+%\documentclass[letterpaper,10pt,oneside]{article}
+
+% Do not stop on errors during compilation.
+\nonstopmode
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PREAMBLE.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{CV-Preamble.tex}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ACTUAL DOCUMENT.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%
+% TITLE BLOCK %
+%%%%%%%%%%%%%%%
+
+\title{Adam Fidel}
+
+\begin{subtitle}
+{Department of Computer Science and Engineering, Texas A\&M University, College Station, TX 77843-3112}
+\par
+\href{mailto:fidel@cse.tamu.edu}
+{fidel@cse.tamu.edu}
+\,$\bullet$\,
++1\,(469)\,387-3025
+\,$\bullet$\,
+\href{http://parasol.tamu.edu/~afidel}
+{http://parasol.tamu.edu/~afidel}
+\end{subtitle}
+
+\begin{body}
+
+%%%%%%%%%%%%%%%
+%% EDUCATION %%
+%%%%%%%%%%%%%%%
+
+\section{Education}
+{Education}
+
+\href{http://www.tamu.edu}
+{\textbf{Texas A\&M University}},
+College Station, TX, USA
+
+\SmallEntryGap
+Doctor of Philosophy (Ph.D.) in
+\href{http://cse.tamu.edu}
+{Computer Science}
+\hfill
+\DatestampYMD{2010}{08}{15} --
+Present
+\begin{detail}
+\begin{detail}
+Cumulative GPA: 4.0 / 4.0
+\end{detail}
+Advisors:
+Professors Nancy Amato and Lawrence Rauchwerger
+\par
+Research areas:
+High performance computing, parallel algorithms, \par
+\hskip 7.3em parallel graph processing.
+\par
+Dissertation: \emph{Bounded Asynchrony and Nested Parallelism for } \par
+\hskip 6.0em \emph{Scalable Graph Processing}
+\end{detail}
+
+\EntryGap
+\href{http://www.ttu.edu}
+{\textbf{Texas Tech University}},
+Lubbock, TX, USA
+\par
+Bachelor of Science (B.S.) in
+\href{http://cs.ttu.edu}
+{Computer Science}
+\hfill
+\DatestampYMD{2006}{08}{15} --
+\DatestampYMD{2010}{05}{15}
+\begin{detail}
+Summa Cum Laude
+\par
+Cumulative GPA: 4.0 / 4.0
+\end{detail}
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%
+% %% WORK EXPERIENCE %%
+% %%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Work Experience}
+{Work Experience}
+
+\textbf{Google},
+Mountain View, CA, USA
+\par
+Software Engineer, Ph.D. Intern
+\hfill
+\DatestampYMD{2015}{09}{28} --
+\DatestampYMD{2015}{12}{20}
+\begin{detail}
+Member of the search infrastructure team.
+\par
+ Designed and implemented parallel graph mining algorithms for massive scale graphs.
+ \par
+\end{detail}
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%
+% %% RESEARCH EXPERIENCE %%
+% %%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Research Experience}
+{Research Experience}
+
+\textbf{Texas A\&M University - Parasol Lab}, College Station, TX, USA
+\par
+Research Assistant
+\hfill
+\DatestampYMD{2010}{05}{15} --
+Present
+\begin{detail}
+\par
+\emph{Advisors}: Professors Nancy Amato and Lawrence Rauchwerger
+\par
+Developer of STAPL, a parallel superset of the C++ Standard Template Library.
+\par
+Designed, implemented novel graph algorithms and techniques that scale up to 131,072+ cores.
+\end{detail}
+\EntryGap
+
+\textbf{University of Massachusetts, Amherst}, Amherst, MA, USA
+\par
+Undergraduate Research Assistant
+\hfill
+\DatestampYMD{2009}{05}{15} --
+\DatestampYMD{2009}{08}{30}
+\begin{detail}
+\emph{Advisor}: Professor J. Eliot B. Moss
+\par
+Automatic compiler backend generation targeting JikesRVM.
+\par
+\end{detail}
+
+
+% %%%%%%%%%%%%%%%%%%
+% %% PUBLICATIONS %%
+% %%%%%%%%%%%%%%%%%%
+
+\section{Publications}
+{Selected Publications}
+
+\begin{detail}
+{{\bf Best Paper Award}. Harshvardhan, \underline{Adam Fidel} Nancy M. Amato, Lawrence Rauchwerger, ``KLA: A New Algorithmic Paradigm for Parallel Graph Computations,'' In Proc. Int. Conf. on Par. Arch. and Comp. Tech. (PACT), Edmonton, Alberta, Canada, Aug 2014.}
+\end{detail}
+
+\EntryGap
+
+\begin{detail}
+{\underline{Adam Fidel}, Sam Ade Jacobs, Shishir Sharma, Nancy M. Amato, Lawrence Rauchwerger, ``Using Load Balancing to Scalably Parallelize Sampling-Based Motion Planning Algorithms,'' In Proc. Int. Par. and Dist. Proc. Symp. (IPDPS), Phoenix, Arizona, USA, May 2014.}
+\end{detail}
+
+\EntryGap
+
+\begin{detail}
+{{\bf Best Paper Finalist.} Harshvardhan, \underline{Adam Fidel}, Nancy M. Amato, Lawrence Rauchwerger, ``An Algorithmic Approach to Communication Reduction in Parallel Graph Algorithms,'' In Proc. Int. Conf. on Par. Arch. and Comp. Tech. (PACT), San Francisco, CA, USA, November 2015.}
+\end{detail}
+
+
+\section{Skills}
+{Skills}
+
+C++ (\emph{Boost, STL}), MPI, OpenMP, Javascript (\emph{Node, React}), Python, Fortran, R
+\par
+\EntryGap
+\href{https://github.com/ledif/}{https://github.com/ledif/}
+
+\end{body}
+
+\end{document}
