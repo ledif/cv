@@ -1,4 +1,6 @@
-build:
+build: full onepage
+
+full:
 	xelatex CV.tex
 
 onepage:
