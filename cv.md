@@ -37,6 +37,7 @@ Texas A&M University - Parasol Lab, College Station, TX, USA
 Research Assistant
 May 2010 - Present
 * Developer of STAPL, a parallel superset of the C++ Standard Template Library.
+* Designed and implemented novel parallel graph algorithms and techniques that scale up to 131,072+ cores.
 * Advisors: Professors Nancy Amato and Lawrence Rauchwerger
 
 University of Massachusetts, Amherst, Amherst, MA, USA
