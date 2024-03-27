@@ -1,10 +1,11 @@
 build: full onepage
 
 full:
-	xelatex CV.tex
+	earthly +full
 
-onepage:
-	xelatex onepage.tex
+single-page:
+	mkdir -p build
+	earthly +single-page
 
 clean:
-	rm *.out *.log *.aux
+	rm -rf build
