@@ -1,7 +1,7 @@
 image: blang/latex
 
 pdf:
-  script: make
+  script: bash -c "xelatex CV.tex && xelatex onepage.tex"
   artifacts:
     paths:
     - CV.pdf
